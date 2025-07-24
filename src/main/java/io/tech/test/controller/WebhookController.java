@@ -40,6 +40,8 @@ public class WebhookController {
 	        return ResponseEntity.ok("Push event with no commits ignored.");
 	    }
 	    log.info("Processing push event.");
+	    log.info("Processing push event.");
+
 	    pushEventService.processPushEvent(payload);
 	    return ResponseEntity.ok("Push event processed successfully!");
 	}
